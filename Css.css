@@ -1,0 +1,575 @@
+body{
+  background-color: #a2c6eb;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: ". . ." "Os Cod CE" "check1 data botao";
+}
+
+.Titulo { 
+  grid-area: 1 / 1 / 2 / 5; 
+  /*background-color:  white;*/
+}
+.check1{
+  grid-area: check1;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*background-color:  red;*/
+}
+.data{
+  grid-area: data;
+  display: block;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*background-color:  blue;*/
+}
+.botao { 
+  grid-area: botao; 
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*background-color: black;*/
+}
+
+.h1Laudo{
+  text-shadow: transparent;
+  color: black;
+  font-family: 'Solway', serif;
+  font-style: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.h2forms{
+  text-shadow: transparent;
+  color: white;
+  font-family: 'Solway', serif;
+  font-size: 1em;
+  text-align: center;
+}
+.encapsulador {
+  display: block;
+}
+.linha{
+  height: auto;
+  width: 100%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.linha2 {
+  margin-top: 50px;
+}
+.func{
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("pixil-frame-0 (7) (1).png");
+  background-repeat:no-repeat;
+  width: 150px; 
+  height: 235px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pFunc{
+  text-align: center;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.pFuncPrimeiro {
+  margin-top: 125px;
+}
+
+.pFuncUltimo {
+  margin-bottom: 20px;
+}
+
+.formLaudo {
+  text-shadow: transparent;
+  color: black;
+  font-family: 'Solway', serif;
+  font-style: bold;
+}
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    font-family: 'Solway', serif;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    font-family: 'Solway', serif;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+.hrLaudo{
+  border: 0.5px solid #acacac; 
+  font-family: 'Solway', serif;
+}
+.hrforms{
+  border: 1px solid #555555; 
+  font-family: 'Solway', serif;
+}
+input[type=text], input[type=password], input[type=email]{
+  font-family: 'Solway', serif;
+    border: 0px;  
+    padding: 10px;
+    background: white;
+    margin: 0 0 10px 0;
+    outline: none;
+}
+input[type=button] {
+  font-family: 'Solway', serif;
+}
+.botaoNormal {
+  color: #4a739b;
+  padding: 10px;
+  background-color: #eefcce;
+  border-radius: 10px;
+  border-color: transparent;
+  border-width: 2px;
+  margin-bottom: 10%;
+}
+.botaoForm {
+  color: #4a739b;
+  padding: 10px;
+  background-color: #eefcce;
+  border-radius: 10px;
+  border-color: transparent;
+  border-width: 2px;
+  margin: 5px;
+}
+.botaoFormMaisEscuro {
+  color: whitesmoke;
+  padding: 10px;
+  background-color: #70adea;
+  border-radius: 10px;
+  font-weight: 600;
+  border-color: transparent;
+  border-width: 2px;
+  margin: 5px;
+}
+.botaoFooter {
+  font-family: 'Solway', serif;
+  color: #4a739b;
+  padding: 10px;
+  background-color: #eefcce;
+  border-radius: 10px;
+  border-color: transparent;
+  border-width: 2px;
+
+  min-width: 100px;
+  min-height: 30px;
+  display: inline;
+}
+
+input[type=button]:hover{
+  opacity: 0.75;
+}
+
+td{
+  vertical-align: top;
+  font-family: 'Solway', serif;
+}
+
+.label{
+  display: inline-block;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    font-family: 'Solway', serif;
+}
+.areatexto{
+  display: inline-block;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    font-family: 'Solway', serif;
+}
+label{
+  font-family: 'Solway', serif;
+  padding: 5px;
+}
+.labelTexto{
+  font-family: 'Solway', serif;
+  padding: 5px;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+.imagem{
+  max-width: 40%;
+  height: auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  font-family: 'Solway', serif;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.entradaImagem{
+  margin-left: 5px;
+  width: 25%;
+}
+  
+.footer{
+  background-color: #9eb25d;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  min-height:10%;      /* Height of the footer */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "EsqueciSenha CadastroAdmin";
+  font-family: 'Solway', serif;
+}
+
+.header {
+  background-color: #9eb25d;
+  color: white;
+  text-align: center;
+  position:fixed;
+  top: 0;
+  width:100%;
+  min-height: 50px;
+  max-height: 50px;
+  font-size: 70%;      /* Height of the header */
+  font-family: 'Solway', serif;
+  z-index: 10;
+}
+
+.headerForm {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #9eb25d;
+  padding: 10px;
+  min-width:100%;
+  min-height: 50px;
+  max-height:10%; 
+}
+
+.EsqueciSenha { 
+  grid-area: EsqueciSenha;
+  display: block;
+  margin: 3%;
+}
+
+.CadastroAdmin { 
+  grid-area: CadastroAdmin;
+  margin: 3%;
+}
+
+/*----------------Confere---------------------------------------------*/
+table{
+  border-collapse: collapse;
+  font-size: 20px;
+  font-family: 'Solway', serif;
+}
+
+
+th{
+  font-family: 'Solway', serif;
+  font-size: 20px;
+}
+td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  /*border-left: 1px solid black;*/
+  /*border-right: 1px solid black;*/
+  text-align: center;
+  font-family: 'Solway', serif;
+}
+.elementos:hover {
+  background-color:#a0a0a0;
+  font-family: 'Solway', serif;
+}
+.botaoBanco{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Solway', serif;
+    /*background-color: red;*/
+}
+
+
+
+
+/* Adicionar funcionarios incone */
+.add{
+  padding: 20px;
+  vertical-align: middle;
+  font-family: 'Solway', serif;
+}
+.plus.icon {
+  display: inline-block;
+  color: #000;
+  /* position: absolute; */
+  vertical-align: middle;
+  /* padding-left: 20px; */
+  height: 192px;
+  width: 152px;
+  /* margin-left: 3px; */
+  /* margin-top: 10px; */
+}
+
+.plus.icon:before {
+  content: '';
+  vertical-align: middle;
+
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.plus.icon:after {
+  content: '';
+  position: absolute;
+  /* vertical-align: middle; */
+
+  width: 50px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #9eb25d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: inline-block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+span {
+  font-family: 'Solway', serif;
+  margin-left: 20px;
+}
+
+h2 {
+  font-family: 'Solway', serif;
+  margin: 20px;
+  font-size: 90%;
+}
+
+p {
+  font-family: 'Solway', serif;
+  margin-left: 20px;
+  font-size: 80%;
+}
+
+textarea {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 250px;
+  height: 60px;
+  font-family: 'Solway', serif;
+  border: none;
+  border-radius: 20px;
+}
+
+.ultimaTextarea {
+  margin-bottom: 150px;
+}
+
+.imgRelatorio {
+  margin-top: 100px;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloComentarioRelatorio {
+  text-align: center;
+  font-family: 'Solway', serif;
+  font-size: 120%;
+}
+
+details {
+  font-family: 'Solway', serif;
+  background: #cebad1;
+  font-size: 70%;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 40%;
+  width: 20%;
+}
+
+.comentarioRelatorio {
+  text-align: center;
+  font-family: 'Solway', serif;
+}
+
+.detailsUltimo {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width:480px) { 
+  .botaoFooter {
+    width: 100%;
+    display: block;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .imgRelatorio {
+    width: 80%;
+  }
+
+  details {
+    margin-left: 2%;
+    width: 90%;
+  }
+
+  .comentarioRelatorio {
+    text-align: left;
+    font-family: 'Solway', serif;
+  }
+}
+
+@media only screen and (max-height:440px) { 
+  .botaoNormal {
+    margin-bottom: 30%;
+  }
+}
